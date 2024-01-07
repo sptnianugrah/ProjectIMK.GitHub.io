@@ -1,9 +1,14 @@
-/* Gaya khusus untuk layar berukuran 600px atau lebih kecil */
-@media screen and (max-width: 600px) {
-  /* Gaya khusus untuk layar kecil */
-  body {
-    font-size: 14px;
-  }
+
+/*media queries: tablet landscape*/
+@media screen and (max-width: 1060px) {
+  #primary { width: 67%; }
+  #secondary { width: 30%; margin-left: 3%;}
+}
+
+/*media queries: tablet potrait*/
+@media screen and (max-width: 768px) {
+  #primary { width: 100%; }
+  #secondary { width: 100%; margin:0; border:none;}
 }
 
 body {
