@@ -1,0 +1,560 @@
+/* Gaya khusus untuk layar berukuran 600px atau lebih kecil */
+@media screen and (max-width: 600px) {
+  /* Gaya khusus untuk layar kecil */
+  body {
+    font-size: 14px;
+  }
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #004c5b;
+    color: #fff;
+    text-align: left;
+    padding: 5px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.fade-text {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*sosmed*/
+
+.social-icons {
+            list-style: none;
+            padding: 6px; /* Menambahkan padding untuk memberi ruang di sekitar ikon */
+            margin: 0;
+            display: flex;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+.social-icons li {
+  margin: 0 10px; /* Memberikan jarak 10px di antara kanan dan kiri ikon */
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+/*bar search*/
+.header {
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.search-container {
+    display: flex;
+
+}
+
+#search-input {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+#search-button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    background-color: #004b5a;
+    color: #fff;
+    outline: none;
+}
+
+/*membuat navbar*/
+/* Navbar container */
+
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    font-family: Arial;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: gray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: gray;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: whitesmoke;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: gray;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/*memuat text digambar*/
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 6s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*tulisan*/
+.centered-text {
+  font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+  color: #004b5a; /* Warna hijau */
+  font-size: 24px; /* Ukuran font */
+
+}
+/*berita*/
+
+.card-container {
+  display: flex;
+  overflow-x: auto; /* Tambahkan overflow-x agar dapat di-scroll jika konten melebihi lebar layar */
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+  width: 300px;
+  margin: 20px;
+  overflow: hidden; /* Hindari gambar yang terlalu besar */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.thumbnail {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: #004b5a;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Optional styling */
+a {
+  color: #004b5a;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #002a30;
+}
+
+/*footer*/
+.content {
+  padding: 20px;
+  color: #ccc;
+  background-color: #0f0f0f;
+  display: flex;
+  align-items: center;
+}
+
+.content p {
+  flex: 1;
+  margin-right: 20px; /* Atur jarak antara teks dan gambar */
+}
+
+.content img {
+  width: 100px;
+  height: 100px;
+  margin-left: 10%; /* Atur jarak antara teks dan gambar */
+}
+
+.camat-info {
+  text-align: center;
+}
+
+footer {
+  background-color: #004b5a;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 99%;
+}
+
+/*logo gif dan kartu*/
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-container {
+  display: flex;
+  align-items: right;
+  margin-top: 10px;
+
+}
+
+.side-image {
+  max-width: 50;
+}
+/*visi*/
+.kartu {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 800px;
+  height: 500px; /* Sesuaikan tinggi sesuai kebutuhan */
+}
+
+.kartu-content {
+  padding: 25px;
+}
+
+h2 {
+  color: #004b5a;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/*text rapi*/
+.text-container {
+  text-align: justify; /* Rata kanan dan kiri */
+}
+
+/*kalender*/
+.calendar {
+  max-width: 300px;
+  margin: 90px auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-left: 60px;
+}
+
+.calendar-header {
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 10px;
+}
+
+.day {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.day:hover {
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+}
+
+.today {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.container-asik {
+  display: flex;
+}
+
+.left-content {
+  flex: 1; /* Take up 50% of the width */
+}
+
+.right-content {
+  flex: 1; /* Take up 50% of the width */
+}
+
+/* Add any additional styling you need */
+
+.maps {
+  max-width: 300px;
+  margin: 90px auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-left: 60px;
+}
+
+
+.card2-container {
+  display: flex;
+  flex-wrap: nowrap; /* Hindari wrapping ke baris baru */
+  overflow-x: auto; /* Aktifkan scrolling horizontal jika diperlukan */
+}
+
+.card2 {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    width: 300px;
+    margin: 20px;
+    overflow: hidden; /* Hindari gambar yang terlalu besar */
+  }
+
+.card2 img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #555;
+}
+
+.read-more {
+  display: block;
+  margin-top: 15px;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/*berita isi*/
+.article-sheet {
+  max-width: 800px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.article-header {
+  background-color: #004b5a;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.article-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.article-meta {
+  font-size: 0.8em;
+  color: #ccc;
+}
+
+.article-content {
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.article-footer {
+  padding: 20px;
+  background-color: #eee;
+  text-align: center;
+}
+
+/*back tombol*/
+.back-button {
+  background-color: #004b5a;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.back-button a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/*sakip*/
+.archive-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.archive-year {
+  background-color: #3498db;
+  color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+}
+
+.archive-year h2 {
+  margin-bottom: 10px;
+}
+
+.archive-year ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.archive-year li {
+  margin-bottom: 5px;
+}

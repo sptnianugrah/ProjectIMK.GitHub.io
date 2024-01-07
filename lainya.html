@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX Kecamatan</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .content2 {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .back-button {
+      margin-right: 20px;
+      background-color: #004b5a;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+.container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+       .containerr {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .cardd {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      width: 250px;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .cardd:hover {
+      transform: scale(1.05);
+    }
+
+    .cardd img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .cardd-content {
+      padding: 20px;
+    }
+
+    .cardd-title {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .cardd-description {
+      color: #555;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .cardd-date {
+      margin-top: 10px;
+      color: #888;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/akun-anda" target="_blank" class="icon"><i class="fab fa-brands fa-facebook"></i></a>
+            <a href="https://www.twitter.com/akun-anda" target="_blank" class="icon"><i class="fab fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/akun-anda" target="_blank" class="icon"><i class="fab fa-brands fa-instagram"></i></a>
+            <!-- Tambahkan link dan ikon sosial media lainnya sesuai kebutuhan Anda -->
+        </div>
+        <p id="fadeText" class="fade-text"></p>
+        </header>
+     <div class="header">
+      <img src="img/logo kec.png">
+      
+      <div class="navbar">
+        <a href="index.html">Beranda</a>
+        
+        <div class="dropdown">
+          <button class="dropbtn">Profil
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="visi.html">Visi Dan Misi</a>
+            <a href="tupoksi.html">Tupoksi</a>
+            <a href="struktur.html">Struktur Organisasi</a>
+            <a href="data.html">Data Pegawai</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">PPID
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="ppid.html">Profil PPID</a>
+              <a href="info.html">Informasi Publik</a>
+              <a href="pelayanan.html">Standar Pelayan</a>
+            </div>
+            </div>
+            <div class="dropdown">
+              <a href="sakip.html">SAKIP</a> 
+            </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Dwonload
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="petunjuk.html">Petunjuk Teknis</a>
+                    </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Galeri
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="kegiatan.html">Kegiatan</a>
+                          <a href="logo.html">LOGO</a>
+
+                        </div>
+                        </div>
+                        <div class="search-container">
+                          <input type="text" id="search-input" placeholder="Cari...">
+                          <button id="search-button">Cari</button>
+                      </div>
+    </div></div>
+    <header>
+        <b>BERITA</b>
+       </header>
+       <div class="containerr">
+
+        <div class="cardd">
+          <a href="berita1.html"><img src="img/rapat.jpg" alt="Berita 1"></a>
+          <div class="cardd-content">
+            <h2 class="cardd-title">Gelar Rapat Koordinasi Penyusunan draff Mekanisme SK</h2>
+            <p class="carddd-description">Nopember 2022 di gelar rakor penysusnan draff Surat Keputusan Camat.</p>
+            <p class="cardd-date">Tanggal: 18 November 2022</p>
+          </div>
+        </div>
+    
+        <div class="cardd">
+          <a href="berita2.html"><img src="img/rapat2.jpg" alt="Berita 2"></a>
+          <div class="cardd-content">
+            <h2 class="cardd-title">Simulasi Sosialisasi dan Pengenalan pelatihan teknis mellaui drama Mini</h2>
+            <p class="cardd-description">Gelar Simulasi pelatihan teknis dan sosialisasi dengan dikemas melalui Vidio drama mini.</p>
+            <p class="cardd-date">Tanggal: 24 November 2022</p>
+          </div>
+        </div>
+
+        <div class="cardd">
+          <a href="berita3.html"><img src="img/rapat3.jpg" alt="Berita 3"></a>
+          <div class="cardd-content">
+            <h2 class="cardd-title">Kecamatan Banjarnegara menyelenggarakan Sosialisasi SKP</h2>
+            <p class="cardd-description">17 Januari 2023 Kecamatan Banjarnegara menyelenggarakan kegiatan SOsialisasi SKP.</p>
+            <p class="cardd-date">Tanggal: 18 Januari 2023</p>
+          </div>
+        </div>
+
+        <div class="cardd">
+          <a href="berita4.html"><img src="img/rapat4.jpg" alt="Berita 4"></a>
+          <div class="cardd-content">
+            <h2 class="cardd-title">Kecamatan Banjarnegara bersama PGRI gelar jalan santai</h2>
+            <p class="cardd-description">PGRI dalam rangka HUT pgri Kecamatan Banjarnegara menggelar Sosialisasi dan Launching si-uLAN GARIMAS.</p>
+            <p class="cardd-date">Tanggal: 26 November 2022</p>
+          </div>
+        </div>
+
+
+    
+        <!-- Tambahkan card lainnya sesuai kebutuhan -->
+    
+      </div>
+      <div class="container">
+      <div class="cardd">
+        <a href="berita5.html"><img src="img/rapat5.jpg" alt="Berita 5"></a>
+        <div class="cardd-content">
+          <h2 class="cardd-title">Pengembangan Kompetensi Diri</h2>
+          <p class="cardd-description">Kecamatan Banjarnegara menggelar acara Inhouse Training untuk bidang kerjasama dan komunikasi atau kehumasan.</p>
+          <p class="cardd-date">Tanggal: 14 Oktober 2022</p>
+        </div>
+      </div>
+
+      <div class="cardd">
+        <a href="berita6.html"><img src="img/rapat6.jpg" alt="Berita 6"></a>
+        <div class="cardd-content">
+          <h2 class="cardd-title">Uji Coba ( Trail dan Error )</h2>
+          <p class="cardd-description">Dalam rangkaian kegiatan aksi perubahan kinerja organisasi , setelah proses penyusunan media digital usah.</p>
+          <p class="cardd-date">Tanggal: 15 November 2022</p>
+        </div>
+      </div>
+
+      <div class="cardd">
+        <a href="berita7.html"><img src="img/rapat7.jpg" alt="Berita 7"></a>
+        <div class="cardd-content">
+          <h2 class="cardd-title">Media Digital Galeri Interaktif masyarakat mulai disiapkan</h2>
+          <p class="cardd-description">bertempat di ruang meeting Kecamatan Banjarnegara, diselenggarakan kegiatan rapat  koordinasi teknis rencana pembangunan media teknologi Informasi.</p>
+          <p class="cardd-date">Tanggal: 26 Oktober 2022</p>
+        </div>
+      </div>
+
+      <div class="cardd">
+        <a href="berita8.html"><img src="img/rapat8.jpg" alt="Berita 8"></a>
+        <div class="cardd-content">
+          <h2 class="cardd-title">Rakor Pembentukan Tim Pengelola</h2>
+          <p class="cardd-description">Oktober 2022 Gelar Rapat Koordinasi  dengan mengundang para stakeholder untuk membahas rencana pelaksanaan implementasi dalam pengelolaan galeri interaktif.</p>
+          <p class="cardd-date">Tanggal: 25 Oktober 2022</p>
+        </div>
+      </div>
+      </div>
+
+      <div class="content2">
+        <button class="back-button" onclick="goBack()"><i class="fas fa-arrow-left"></i> <a href="index.html">Back</a></button>
+        <!-- Konten Halaman --> 
+</div>
+      <hr>
+  <div class="container">
+              <div class="calendar" id="calendar">
+                <div class="calendar-header">
+                  <span id="prevMonth">&#10094;</span>
+                  <span id="currentMonth"></span>
+                  <span id="nextMonth">&#10095;</span>
+                </div>
+                <div class="calendar-days" id="calendarDays"></div>
+              </div>
+            
+              <div class="maps">
+                Lokasi Kantor<br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.5240064993286!2d109.69371127412666!3d-7.407106292603033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7aa98c5e720be1%3A0x60d26897ca6b006f!2sKantor%20Kecamatan%20Banjarnegara!5e0!3m2!1sid!2sid!4v1703774158869!5m2!1sid!2sid" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+       
+            <div class="content">
+              <!-- Konten Halaman --> 
+              
+            <p>
+              <i class="fas fa-envelope"></i> kec_banjarnegara@banjarnegarakab.go.id<br>
+              <i class="fa-solid fa-location-dot"></i> Jl. Raya Argasoka Km. 02 No. 19 Banjarnegara 53418<br>
+              <i class="fa-brands fa-whatsapp"></i> 088888888889<br>
+              <i class="fa-solid fa-clock"></i> jam kerja 08.00-15.00
+            </p>
+            
+            
+            <div class="camat-info">
+              <img src="img/camat.jpg" alt="camat kecamatan Banjarnegara">
+              <figcaption>SONHAJI, S.IP, S.Sos, M.Kes<br>camat kecamatan Banjarnegara</figcaption>
+            </div>
+            </div>
+            
+            </div>
+
+
+         <footer>
+           &copy; 2018 Kec.Bna Construction Field by Acme Themes
+         </footer>
+         
+         
+             <script src="script.js">
+              function goBack() {
+      window.history.back();
+    }
+             </script>
+         </body>
+         </html>

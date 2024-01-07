@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX Kecamatan</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .container3 {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/akun-anda" target="_blank" class="icon"><i class="fab fa-brands fa-facebook"></i></a>
+            <a href="https://www.twitter.com/akun-anda" target="_blank" class="icon"><i class="fab fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/akun-anda" target="_blank" class="icon"><i class="fab fa-brands fa-instagram"></i></a>
+            <!-- Tambahkan link dan ikon sosial media lainnya sesuai kebutuhan Anda -->
+        </div>
+        <p id="fadeText" class="fade-text"></p>
+        </header>
+     <div class="header">
+      <img src="img/logo kec.png">
+      
+
+      <div class="navbar">
+        <a href="index.html">Beranda</a>
+        
+        <div class="dropdown">
+          <button class="dropbtn">Profil
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="visi.html">Visi Dan Misi</a>
+            <a href="tupoksi.html">Tupoksi</a>
+            <a href="struktur.html">Struktur Organisasi</a>
+            <a href="data.html">Data Pegawai</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">PPID
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="ppid.html">Profil PPID</a>
+              <a href="info.html">Informasi Publik</a>
+              <a href="pelayanan.html">Standar Pelayan</a>
+            </div>
+            </div>
+            <div class="dropdown">
+              <a href="sakip.html">SAKIP</a> 
+            </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Dwonload
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="petunjuk.html">Petunjuk Teknis</a>
+                    </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Galeri
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="kegiatan.html">Kegiatan</a>
+                          <a href="logo.html">LOGO</a>
+
+                        </div>
+                        </div>
+                        <div class="search-container">
+                          <input type="text" id="search-input" placeholder="Cari...">
+                          <button id="search-button">Cari</button>
+                      </div>
+    </div></div>
+    <header>
+        <b>GALERI KEGIATAN</b>
+       </header>
+      </header>
+      <table>
+       <thead>
+         <tr>
+           <th>
+       <img src="img/giflogo.gif">
+       </th>
+
+       <th><div class="kartu">
+              <div class="kartu-content"><br><br><br>
+                    <img src="img/rapat2.jpg" width="200" height="150">
+                    <img src="img/rapat3.jpg" width="200" height="150">
+                    <img src="img/rapat4.jpg" width="200" height="150">
+                    <img src="img/rapat.jpg" width="200" height="150">
+                    <img src="img/rapat6.jpg" width="200" height="150">
+                    <img src="img/rapat7.jpg" width="200" height="150">
+                </div>
+                <a href="#">Lainya</a>
+                </div>
+                </th>
+              </tr>
+            </thead>
+            </table>
+
+                <br><hr>
+
+                <div class="container3">
+              <div class="calendar" id="calendar">
+                <div class="calendar-header">
+                  <span id="prevMonth">&#10094;</span>
+                  <span id="currentMonth"></span>
+                  <span id="nextMonth">&#10095;</span>
+                </div>
+                <div class="calendar-days" id="calendarDays"></div>
+              </div>
+            
+              <div class="maps">
+                Lokasi Kantor<br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.5240064993286!2d109.69371127412666!3d-7.407106292603033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7aa98c5e720be1%3A0x60d26897ca6b006f!2sKantor%20Kecamatan%20Banjarnegara!5e0!3m2!1sid!2sid!4v1703774158869!5m2!1sid!2sid" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+       
+            <div class="content">
+              <!-- Konten Halaman --> 
+              
+            <p>
+              <i class="fas fa-envelope"></i> kec_banjarnegara@banjarnegarakab.go.id<br>
+              <i class="fa-solid fa-location-dot"></i> Jl. Raya Argasoka Km. 02 No. 19 Banjarnegara 53418<br>
+              <i class="fa-brands fa-whatsapp"></i> 088888888889<br>
+              <i class="fa-solid fa-clock"></i> jam kerja 08.00-15.00
+            </p>
+            
+            
+            <div class="camat-info">
+              <img src="img/camat.jpg" alt="camat kecamatan Banjarnegara">
+              <figcaption>SONHAJI, S.IP, S.Sos, M.Kes<br>camat kecamatan Banjarnegara</figcaption>
+            </div>
+            </div>
+            
+            </div>
+
+            
+         <footer>
+           &copy; 2018 Kec.Bna Construction Field by Acme Themes
+         </footer>
+         
+         
+             <script src="script.js"></script>
+         </body>
+         </html>

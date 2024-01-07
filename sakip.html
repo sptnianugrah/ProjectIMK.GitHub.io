@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX Kecamatan</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    
+    
+      .container3 {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+  table {
+      border-collapse: collapse;
+      width: 200%; /* Sesuaikan lebar tabel sesuai kebutuhan Anda */
+      margin-top: 1%;
+      margin-bottom: 5%;
+      border-radius: 10px;
+      overflow: hidden;
+      outline: 2px solid #004c5b;
+      margin-left: 3%;
+      margin-right: 3%;
+  }
+
+  th, td {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 10px;
+  }
+
+  th {
+      background-color: #004c5b;
+      color: #fff;
+  }
+  button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 1em;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      border: 2px solid #004c5b;
+      color: #004c5b;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+      cursor: pointer;
+  }
+
+ button:hover {
+      background-color: #004c5b;
+      color: #fff;
+  }
+ 
+</style>
+</head>
+<body>
+    <header>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/akun-anda" target="_blank" class="icon"><i class="fab fa-brands fa-facebook"></i></a>
+            <a href="https://www.twitter.com/akun-anda" target="_blank" class="icon"><i class="fab fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/akun-anda" target="_blank" class="icon"><i class="fab fa-brands fa-instagram"></i></a>
+            <!-- Tambahkan link dan ikon sosial media lainnya sesuai kebutuhan Anda -->
+        </div>
+        <p id="fadeText" class="fade-text"></p>
+        </header>
+     <div class="header">
+      <img src="img/logo kec.png">
+      
+
+      <div class="navbar">
+        <a href="index.html">Beranda</a>
+        
+        <div class="dropdown">
+          <button class="dropbtn">Profil
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="visi.html">Visi Dan Misi</a>
+            <a href="tupoksi.html">Tupoksi</a>
+            <a href="struktur.html">Struktur Organisasi</a>
+            <a href="data.html">Data Pegawai</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">PPID
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="ppid.html">Profil PPID</a>
+              <a href="info.html">Informasi Publik</a>
+              <a href="pelayanan.html">Standar Pelayan</a>
+            </div>
+            </div>
+            <div class="dropdown">
+              <a href="sakip.html">SAKIP</a> 
+            </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Dwonload
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="petunjuk.html">Petunjuk Teknis</a>
+                    </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Galeri
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="kegiatan.html">Kegiatan</a>
+                          <a href="logo.html">LOGO</a>
+
+                        </div>
+                        </div>
+                        <div class="search-container">
+                          <input type="text" id="search-input" placeholder="Cari...">
+                          <button id="search-button">Cari</button>
+                      </div>
+    </div></div>
+    <header>
+     <b>SAKIP</b>
+    </header>
+      <section id="services" class="services section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title"> 
+              <br><strong>SAKIP TAHUN 2023</strong>
+                <div class="misi mt-3">
+                  <div class="table-responsive">
+                    <table class="table table-hover table-bordered border-dark">
+                      <thead class="text-center">
+                        <tr>
+                          <th scope="col" class="text-center" width="5%">No</th>
+                          <th scope="col" class="text-center" width="15%">Tanggal/Tahun</th>
+                          <th scope="col" class="text-center" width="50%">Judul</th>
+                          <th scope="col" class="text-center" width="8%">Berkas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                                                                  <tr>
+                            <th scope="row" class="text-center">1</th>
+                            <td>2023</td>
+                            <td>IKU DAN IKI</td>
+                            <td class="text-center">
+                              <a href="https://kecbna.banjarnegarakab.go.id/wp-content/uploads/2023/12/IKU-2023.pdf" class="btn-social sm pinterest" target="_blank"><button>UNDUH</button><i class="bi bi-folder2-open"></i></a>                        </td>
+                            <!-- <td class="text-center"><a href="">Unduh</a></td> -->
+                          </tr>
+                                                                    <tr>
+                            <th scope="row" class="text-center">2</th>
+                            <td>2023</td>
+                            <td>RENSTRA</td>
+                            <td class="text-center">
+                              <a href="https://kecbna.banjarnegarakab.go.id/wp-content/uploads/2023/12/RENCANA-STRATEGIS-RENSTRA-TAHUN-2023-KEC.-BANJARNEGARA.pdf" class="btn-social sm pinterest" target="_blank"><button>UNDUH</button><i class="bi bi-folder2-open"></i></a>                        </td>
+                            <!-- <td class="text-center"><a href="">Unduh</a></td> -->
+                          </tr>
+                                                                    <tr>
+                            <th scope="row" class="text-center">3</th>
+                            <td>2023</td>
+                            <td>RENJA</td>
+                            <td class="text-center">
+                              <a href="https://kecbna.banjarnegarakab.go.id/wp-content/uploads/2023/12/RENCANA-KERJA-PERUBAHAN-RENJA-2023.pdf" class="btn-social sm pinterest" target="_blank"><button>UNDUH</button><i class="bi bi-folder2-open"></i></a>                        </td>
+                            <!-- <td class="text-center"><a href="">Unduh</a></td> -->
+                          </tr>
+                                                                    <tr>
+                            <th scope="row" class="text-center">4</th>
+                            <td>2023</td>
+                            <td>RENCANA AKSI</td>
+                            <td class="text-center">
+                              <a href="https://www.gresikkab.go.id/documents/1701135278-24-01-2023 11_51_07_Rencana Aksi 2023.pdf" class="btn-social sm pinterest" target="_blank"><button>UNDUH</button><i class="bi bi-folder2-open"></i></a>                        </td>
+                            <!-- <td class="text-center"><a href="">Unduh</a></td> -->
+                          </tr>
+                                                                    <tr>
+                            <th scope="row" class="text-center">5</th>
+                            <td>2023</td>
+                            <td>PERJANJIAN KINERJA</td>
+                            <td class="text-center">
+                              <a href="https://www.gresikkab.go.id/documents/1701135295-30-01-2023 15_33_07_PK Kecamatan Gresik.pdf" class="btn-social sm pinterest" target="_blank"><button>UNDUH</button><i class="bi bi-folder2-open"></i></a>                        </td>
+                            <!-- <td class="text-center"><a href="">Unduh</a></td> -->
+                          </tr>
+                                                                    <tr>
+                            <th scope="row" class="text-center">6</th>
+                            <td>2022</td>
+                            <td>LKjIP</td>
+                            <td class="text-center">
+                              <a href="https://www.gresikkab.go.id/documents/1701135339-28-02-2023 15_19_26_LKjIP 2022 Kec. Gresik_Optimized.pdf" class="btn-social sm pinterest" target="_blank"><button>UNDUH</button><i class="bi bi-folder2-open"></i></a>                        </td>
+                            <!-- <td class="text-center"><a href="">Unduh</a></td> -->
+                          </tr>
+                                                                </tbody>
+                    </table>
+                  </div>
+                </div>
+                      
+              <strong>SAKIP TAHUN 2022</strong>
+              
+                <div class="misi mt-3">
+                  <div class="table-responsive">
+                    <table class="table table-hover table-bordered border-dark">
+                      <thead class="text-center">
+                        <tr>
+                          <th scope="col" class="text-center" width="5%">No</th>
+                          <th scope="col" class="text-center" width="15%">Tanggal/Tahun</th>
+                          <th scope="col" class="text-center" width="50%">Judul</th>
+                          <th scope="col" class="text-center" width="8%">Berkas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                                                                  <tr>
+                            <th scope="row" class="text-center">1</th>
+                            <td>2022</td>
+                            <td>RENJA</td>
+                            <td class="text-center">
+                              <a href="https://www.gresikkab.go.id/documents/1654571885-Renja.pdf" class="btn-social sm pinterest" target="_blank"><button>UNDUH</button><i class="bi bi-folder2-open"></i></a>                        </td>
+                            <!-- <td class="text-center"><a href="">Unduh</a></td> -->
+                          </tr>
+                                                                    <tr>
+                            <th scope="row" class="text-center">2</th>
+                            <td>2022</td>
+                            <td>IKU dan IKI</td>
+                            <td class="text-center">
+                              <a href="https://www.gresikkab.go.id/documents/1654571907-IKU IKI.pdf" class="btn-social sm pinterest" target="_blank"><button>UNDUH</button><i class="bi bi-folder2-open"></i></a>                        </td>
+                            <!-- <td class="text-center"><a href="">Unduh</a></td> -->
+                          </tr>
+                                                                    <tr>
+                            <th scope="row" class="text-center">3</th>
+                            <td>2022</td>
+                            <td>RENCANA AKSI</td>
+                            <td class="text-center">
+                              <a href="https://www.gresikkab.go.id/documents/1654571932-Renak.pdf" class="btn-social sm pinterest" target="_blank"><button>UNDUH</button><i class="bi bi-folder2-open"></i></a>                        </td>
+                            <!-- <td class="text-center"><a href="">Unduh</a></td> -->
+                          </tr>
+                                                                    <tr>
+                            <th scope="row" class="text-center">4</th>
+                            <td>2022</td>
+                            <td>PERJANJIAN KINERJA</td>
+                            <td class="text-center">
+                              <a href="https://www.gresikkab.go.id/documents/1654572019-PK.pdf" class="btn-social sm pinterest" target="_blank"><button>UNDUH</button><i class="bi bi-folder2-open"></i></a>                        </td>
+                            <!-- <td class="text-center"><a href="">Unduh</a></td> -->
+                          </tr>
+                                                                    <tr>
+                            <th scope="row" class="text-center">5</th>
+                            <td>2021-2026</td>
+                            <td>RENSTRA</td>
+                            <td class="text-center">
+                              <a href="https://www.gresikkab.go.id/documents/1654571863-renstra kec. gresik.pdf" class="btn-social sm pinterest" target="_blank"><button>UNDUH</button><i class="bi bi-folder2-open"></i></a>                        </td>
+                            <!-- <td class="text-center"><a href="">Unduh</a></td> -->
+                          </tr>
+                                                                    <tr>
+                            <th scope="row" class="text-center">6</th>
+                            <td>2021</td>
+                            <td>LKjIP</td>
+                            <td class="text-center">
+                              <a href="https://www.gresikkab.go.id/documents/1654572409-LKjIP Kec Gresik 2021.pdf" class="btn-social sm pinterest" target="_blank"><button>UNDUH</button><i class="bi bi-folder2-open"></i></a>                        </td>
+                            <!-- <td class="text-center"><a href="">Unduh</a></td> -->
+                          </tr>
+                                                                </tbody>
+                    </table>
+                  </div>
+                </div>
+                      
+              <strong>SAKIP TAHUN 2021</strong>
+              
+                <div class="misi mt-3">
+                  <div class="table-responsive">
+                    <table class="table table-hover table-bordered border-dark">
+                      <thead class="text-center">
+                        <tr>
+                          <th scope="col" class="text-center" width="5%">No</th>
+                          <th scope="col" class="text-center" width="15%">Tanggal/Tahun</th>
+                          <th scope="col" class="text-center" width="50%">Judul</th>
+                          <th scope="col" class="text-center" width="8%">Berkas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                                                                  <tr>
+                            <th scope="row" class="text-center">1</th>
+                            <td>2020</td>
+                            <td>LAPORAN KINERJA (LKjIP)</td>
+                            <td class="text-center">
+                              <a href="https://www.gresikkab.go.id/documents/1615856907-LKJIP KEC GRESIK 2020.pdf" class="btn-social sm pinterest" target="_blank"><button>UNDUH</button><i class="bi bi-folder2-open"></i></a>                        </td>
+                            <!-- <td class="text-center"><a href="">Unduh</a></td> -->
+                          </tr>
+                                                                </tbody>
+                    </table>
+                  </div>
+                </div>
+                      
+              <strong>SAKIP TAHUN 2020</strong>
+              
+                <div class="misi mt-3">
+                  <div class="table-responsive">
+                    <table class="table table-hover table-bordered border-dark">
+                      <thead class="text-center">
+                        <tr>
+                          <th scope="col" class="text-center" width="5%">No</th>
+                          <th scope="col" class="text-center" width="15%">Tanggal/Tahun</th>
+                          <th scope="col" class="text-center" width="50%">Judul</th>
+                          <th scope="col" class="text-center" width="8%">Berkas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                                                                  <tr>
+                            <th scope="row" class="text-center">1</th>
+                            <td>2020</td>
+                            <td>PERJANJIAN KINERJA</td>
+                            <td class="text-center">
+                              <a href="https://www.gresikkab.go.id/documents/1609384950-PK-KECAMATAN-GRESIK.pdf" class="btn-social sm pinterest" target="_blank"><button>UNDUH</button><i class="bi bi-folder2-open"></i></a>                        </td>
+                            <!-- <td class="text-center"><a href="">Unduh</a></td> -->
+                          </tr>
+                                                                    <tr>
+                            <th scope="row" class="text-center">2</th>
+                            <td>2020</td>
+                            <td>RENCANA AKSI</td>
+                            <td class="text-center">
+                              <a href="https://www.gresikkab.go.id/documents/1609384956-TEMPLATE-RENCANA-AKSI-2020.pdf" class="btn-social sm pinterest" target="_blank"><button>UNDUH</button><i class="bi bi-folder2-open"></i></a>                        </td>
+                            <!-- <td class="text-center"><a href="">Unduh</a></td> -->
+                          </tr>
+                                                                </tbody>
+                    </table>
+                  </div>
+                </div>
+                      
+              <strong>SAKIP TAHUN 2019</strong>
+              
+                <div class="misi mt-3">
+                  <div class="table-responsive">
+                    <table class="table table-hover table-bordered border-dark">
+                      <thead class="text-center">
+                        <tr>
+                          <th scope="col" class="text-center" width="5%">No</th>
+                          <th scope="col" class="text-center" width="15%">Tanggal/Tahun</th>
+                          <th scope="col" class="text-center" width="50%">Judul</th>
+                          <th scope="col" class="text-center" width="8%">Berkas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                                                                  <tr>
+                            <th scope="row" class="text-center">1</th>
+                            <td>2020</td>
+                            <td>RENJA</td>
+                            <td class="text-center">
+                              <a href="https://www.gresikkab.go.id/documents/1609385028-RENJA-2020-1.pdf" class="btn-social sm pinterest" target="_blank"><button>UNDUH</button><i class="bi bi-folder2-open"></i></a>                        </td>
+                            <!-- <td class="text-center"><a href="">Unduh</a></td> -->
+                          </tr>
+                                                                    <tr>
+                            <th scope="row" class="text-center">2</th>
+                            <td>2019</td>
+                            <td>IKU DAN IKI</td>
+                            <td class="text-center">
+                              <a href="https://www.gresikkab.go.id/documents/1609385028-IKU-DAN-IKI-2019-1.pdf" class="btn-social sm pinterest" target="_blank"><button>UNDUH</button><i class="bi bi-folder2-open"></i></a>                        </td>
+                            <!-- <td class="text-center"><a href="">Unduh</a></td> -->
+                          </tr>
+                                                                    <tr>
+                            <th scope="row" class="text-center">3</th>
+                            <td>2019</td>
+                            <td>RENCANA AKSI</td>
+                            <td class="text-center">
+                              <a href="https://www.gresikkab.go.id/documents/1609385028-RENCANA-AKSI-2019-1.pdf" class="btn-social sm pinterest" target="_blank"><button>UNDUH</button><i class="bi bi-folder2-open"></i></a>                        </td>
+                            <!-- <td class="text-center"><a href="">Unduh</a></td> -->
+                          </tr>
+                                                                    <tr>
+                            <th scope="row" class="text-center">4</th>
+                            <td>2019</td>
+                            <td>PERJANJIAN KINERJA</td>
+                            <td class="text-center">
+                              <a href="https://www.gresikkab.go.id/documents/1609385029-7ef2c348700b7669d4cfb13d67696fe4.pdf" class="btn-social sm pinterest" target="_blank"><button>UNDUH</button><i class="bi bi-folder2-open"></i></a>                        </td>
+                            <!-- <td class="text-center"><a href="">Unduh</a></td> -->
+                          </tr>
+                                                                    <tr>
+                            <th scope="row" class="text-center">5</th>
+                            <td>2018</td>
+                            <td>LAPORAN KINERJA (LKjIP)</td>
+                            <td class="text-center">
+                              <a href="https://www.gresikkab.go.id/documents/1609385029-LAKIP-KEC-GRESIK-2018.pdf" class="btn-social sm pinterest" target="_blank"><button>UNDUH</button><i class="bi bi-folder2-open"></i></a>                        </td>
+                            <!-- <td class="text-center"><a href="">Unduh</a></td> -->
+                          </tr>
+                                                                </tbody>
+                    </table>
+                  </div>
+                </div>
+                      
+              <strong>SAKIP TAHUN 2018</strong>
+              
+                <div class="misi mt-3">
+                  <div class="table-responsive">
+                    <table class="table table-hover table-bordered border-dark">
+                      <thead class="text-center">
+                        <tr>
+                          <th scope="col" class="text-center" width="5%">No</th>
+                          <th scope="col" class="text-center" width="15%">Tanggal/Tahun</th>
+                          <th scope="col" class="text-center" width="50%">Judul</th>
+                          <th scope="col" class="text-center" width="8%">Berkas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                                                                  <tr>
+                            <th scope="row" class="text-center">1</th>
+                            <td>2018</td>
+                            <td>IKU</td>
+                            <td class="text-center">
+                              <a href="https://www.gresikkab.go.id/documents/1609385059-IKU-2018.pdf" class="btn-social sm pinterest" target="_blank"><button>UNDUH</button><i class="bi bi-folder2-open"></i></a>                        </td>
+                            <!-- <td class="text-center"><a href="">Unduh</a></td> -->
+                          </tr>
+                                                                    <tr>
+                            <th scope="row" class="text-center">2</th>
+                            <td>2018</td>
+                            <td>PERJANJIAN KINERJA</td>
+                            <td class="text-center">
+                              <a href="https://www.gresikkab.go.id/documents/1609385059-PK-1.pdf" class="btn-social sm pinterest" target="_blank"><button>UNDUH</button><i class="bi bi-folder2-open"></i></a>                        </td>
+                            <!-- <td class="text-center"><a href="">Unduh</a></td> -->
+                          </tr>
+                                                                </tbody>
+                    </table>
+                  </div>
+                </div>
+                      
+              <strong>SAKIP TAHUN 2017</strong>
+              
+                <div class="misi mt-3">
+                  <div class="table-responsive">
+                    <table class="table table-hover table-bordered border-dark">
+                      <thead class="text-center">
+                        <tr>
+                          <th scope="col" class="text-center" width="5%">No</th>
+                          <th scope="col" class="text-center" width="15%">Tanggal/Tahun</th>
+                          <th scope="col" class="text-center" width="50%">Judul</th>
+                          <th scope="col" class="text-center" width="8%">Berkas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                                                                  <tr>
+                            <th scope="row" class="text-center">1</th>
+                            <td>2017</td>
+                            <td>RENJA</td>
+                            <td class="text-center">
+                              <a href="https://www.gresikkab.go.id/documents/1609385098-Renja.rar" class="btn-social sm pinterest" target="_blank"><button>UNDUH</button><i class="bi bi-folder2-open"></i></a>                        </td>
+                            <!-- <td class="text-center"><a href="">Unduh</a></td> -->
+                          </tr>
+                                                                    <tr>
+                            <th scope="row" class="text-center">2</th>
+                            <td>2017</td>
+                            <td>IKU</td>
+                            <td class="text-center">
+                              <a href="#" class="btn-social sm pinterest" target="_blank"><button>UNDUH</button><i class="bi bi-folder2-open"></i></a>                        </td>
+                            <!-- <td class="text-center"><a href="">Unduh</a></td> -->
+                          </tr>
+                                                                    <tr>
+                            <th scope="row" class="text-center">3</th>
+                            <td>2016-2021</td>
+                            <td>RENSTRA</td>
+                            <td class="text-center">
+                              <a href="#" class="btn-social sm pinterest" target="_blank"><button>UNDUH</button><i class="bi bi-folder2-open"></i></a>                        </td>
+                            <!-- <td class="text-center"><a href="">Unduh</a></td> -->
+                          </tr>
+                                                                    <tr>
+                            <th scope="row" class="text-center">4</th>
+                            <td>2016</td>
+                            <td>LAPORAN KINERJA</td>
+                            <td class="text-center">
+                              <a href="#" class="btn-social sm pinterest" target="_blank"><button>UNDUH</button><i class="bi bi-folder2-open"></i></a>                        </td>
+                            <!-- <td class="text-center"><a href="">Unduh</a></td> -->
+                          </tr>
+                                                                </tbody>
+                    </table>
+                  </div>
+                </div>
+                      
+          </div>
+        </div>
+    
+        </div>
+      </section><!-- End Services Section -->
+
+      <!-- Tambahkan lebih banyak blok archive-year sesuai tahun yang diinginkan -->
+      
+  </div>
+<hr>
+  <div class="container3">
+        <div class="calendar" id="calendar">
+          <div class="calendar-header">
+            <span id="prevMonth">&#10094;</span>
+            <span id="currentMonth"></span>
+            <span id="nextMonth">&#10095;</span>
+          </div>
+          <div class="calendar-days" id="calendarDays"></div>
+        </div>
+      
+        <div class="maps">
+          Lokasi Kantor<br>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.5240064993286!2d109.69371127412666!3d-7.407106292603033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7aa98c5e720be1%3A0x60d26897ca6b006f!2sKantor%20Kecamatan%20Banjarnegara!5e0!3m2!1sid!2sid!4v1703774158869!5m2!1sid!2sid" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+
+      <div class="content">
+        <!-- Konten Halaman --> 
+        
+      <p>
+        <i class="fas fa-envelope"></i> kec_banjarnegara@banjarnegarakab.go.id<br>
+        <i class="fa-solid fa-location-dot"></i> Jl. Raya Argasoka Km. 02 No. 19 Banjarnegara 53418<br>
+        <i class="fa-brands fa-whatsapp"></i> 088888888889<br>
+        <i class="fa-solid fa-clock"></i> jam kerja 08.00-15.00
+      </p>
+      
+      
+      <div class="camat-info">
+        <img src="img/camat.jpg" alt="camat kecamatan Banjarnegara">
+        <figcaption>SONHAJI, S.IP, S.Sos, M.Kes<br>camat kecamatan Banjarnegara</figcaption>
+      </div>
+      </div>
+      
+      </div>
+      
+  <footer>
+    &copy; 2018 Kec.Bna Construction Field by Acme Themes
+  </footer>
+  
+  
+      <script src="script.js"></script>
+
+
+    </body></html>
